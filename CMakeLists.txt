@@ -9,6 +9,7 @@ sbeParseJson(info jsonInfo)
 project("${info.projectName}" "VERSION" "${info.version.major}.${info.version.minor}.${info.version.patch}" "DESCRIPTION" "${info.projectDescription}" "HOMEPAGE_URL" "${info.repository}" "LANGUAGES" "C" "CXX")
 
 add_subdirectory(UsageEnvironment)
+add_subdirectory(BasicUsageEnvironment)
 add_subdirectory(groupsock)
 add_subdirectory(liveMedia)
 

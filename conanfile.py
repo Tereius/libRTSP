@@ -30,7 +30,7 @@ class LibonvifConan(ConanFile):
     tool_requires = ["cmake/3.21.7", "ninja/1.11.1", "qtappbase/[~1]@%s/snapshot" % user]
     # ---Sources---
     exports = ["info.json", "COPYING"]
-    exports_sources = ["info.json", "CMake/*", "UsageEnvironment/*", "groupsock/*", "liveMedia/*", "CMakeLists.txt"]
+    exports_sources = ["info.json", "CMake/*", "UsageEnvironment/*", "BasicUsageEnvironment/*", "groupsock/*", "liveMedia/*", "CMakeLists.txt"]
     # ---Binary model---
     settings = "os", "compiler", "build_type", "arch"
     options = {"openssl": [True, False]}
