@@ -1,0 +1,13 @@
+@PACKAGE_INIT@
+
+set_and_check(CMAKE_INSTALL_DIR "@PACKAGE_CMAKE_INSTALL_DIR@")
+set_and_check(BIN_INSTALL_DIR "@PACKAGE_BIN_INSTALL_DIR@")
+set_and_check(INCLUDE_INSTALL_DIR "@PACKAGE_INCLUDE_INSTALL_DIR@")
+set_and_check(LIB_INSTALL_DIR "@PACKAGE_LIB_INSTALL_DIR@")
+
+include("${CMAKE_INSTALL_DIR}/UsageEnvironmentTargets.cmake")
+include("${CMAKE_INSTALL_DIR}/groupsockTargets.cmake")
+include("${CMAKE_INSTALL_DIR}/liveMediaTargets.cmake")
+include_directories("${INCLUDE_INSTALL_DIR}")
+
+set(ENV{PATH} "${BIN_INSTALL_DIR};$ENV{PATH}")

@@ -1,0 +1,21 @@
+{
+  "version": {
+    "major": 3,
+    "minor": 0,
+    "patch": 0,
+    "snapshot": true
+  },
+  "projectName": "libRTSP",
+  "projectDescription": "A RTSP library forked from live555",
+  "vendor": "Björn Stresing",
+  "contact": "bjoern.stresing@gmx.de",
+  "domain": "com.github.tereius",
+  "copyrightYear": "2023",
+  "repository": "https://github.com/Tereius/libRTSP",
+  "topics": [
+    "RTSP",
+    "live555"
+  ],
+  "homepage": "https://github.com/Tereius/libRTSP",
+  "license": "GPLv3"
+}
