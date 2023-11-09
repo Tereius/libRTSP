@@ -16,10 +16,9 @@ include(CMakePackageConfigHelpers)
 
 set(INCLUDE_INSTALL_DIR "include")
 set(CMAKE_INSTALL_DIR "cmake")
-set(BIN_INSTALL_DIR "bin")
 set(LIB_INSTALL_DIR "lib")
 configure_package_config_file("${PROJECT_SOURCE_DIR}/CMake/libRTSPConfig.cmake.in" "${PROJECT_BINARY_DIR}/libRTSPConfig.cmake" INSTALL_DESTINATION cmake
-        PATH_VARS INCLUDE_INSTALL_DIR CMAKE_INSTALL_DIR BIN_INSTALL_DIR LIB_INSTALL_DIR)
+        PATH_VARS INCLUDE_INSTALL_DIR CMAKE_INSTALL_DIR LIB_INSTALL_DIR)
 
 install(FILES "${PROJECT_BINARY_DIR}/libRTSPConfig.cmake" DESTINATION cmake)
 
