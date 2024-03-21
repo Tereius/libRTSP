@@ -27,7 +27,7 @@ class LibonvifConan(ConanFile):
     url = jsonInfo["repository"]
     # ---Requirements---
     requires = []
-    tool_requires = ["cmake/3.21.7", "ninja/1.11.1", "qtappbase/[~1]@%s/snapshot" % user]
+    tool_requires = ["cmake/3.21.7", "ninja/1.11.1"]
     # ---Sources---
     exports = ["info.json", "COPYING"]
     exports_sources = ["info.json", "CMake/*", "UsageEnvironment/*", "BasicUsageEnvironment/*", "groupsock/*", "liveMedia/*", "CMakeLists.txt"]
